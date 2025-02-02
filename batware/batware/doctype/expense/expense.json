@@ -5,8 +5,12 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "split_section",
   "paid_by",
-  "split",
+  "column_break_kbuk",
+  "split_method",
+  "section_break_lxsf",
+  "splits",
   "section_break_xjxs",
   "date",
   "amount",
@@ -82,19 +86,41 @@
   },
   {
    "fieldname": "section_break_xjxs",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "column_break_kbuk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "split_method",
+   "fieldtype": "Select",
+   "label": "Split Method",
+   "options": "Equally\nManual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_lxsf",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "split",
+   "fieldname": "split_section",
+   "fieldtype": "Section Break",
+   "label": "Split"
+  },
+  {
+   "fieldname": "splits",
    "fieldtype": "Table",
-   "label": "Split",
-   "options": "Expense Split"
+   "label": "Splits",
+   "options": "Expense Split",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-02 23:24:54.559580",
+ "modified": "2025-02-03 00:35:28.510716",
  "modified_by": "Administrator",
  "module": "Batware",
  "name": "Expense",
